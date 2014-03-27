@@ -73,7 +73,7 @@ class TinyMCE(forms.Textarea):
         
         # Fix for js functions
         js_functions = {}
-        for k in ('paste_preprocess','paste_postprocess'):
+        for k in ('paste_preprocess','paste_postprocess','file_browser_callback'):
             if k in mce_config:
                js_functions[k] = mce_config[k]
                del mce_config[k]
